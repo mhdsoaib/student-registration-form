@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="#" id="nav-form" class="active">Form</a>
+    <a href="#" id="nav-records">Registered Students</a>
+  </nav>
+
+  <!-- Form Section -->
+  <div id="form-section" class="section">
+    <h2>Student Details Form</h2>
+    <form id="studentForm">
+      <div class="form-group">
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="student-name" name="student-name" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="student-id">Student ID:</label>
+        <input type="text" id="student-id" name="student-id" placeholder="Enter your student ID" required>
+      </div>
+      <div class="form-group">
+        <label for="email-id">Email ID:</label>
+        <input type="email" id="email-id" name="email-id" placeholder="Enter your email address" required>
+      </div>
+      <div class="form-group">
+        <label for="contact-no">Contact Number:</label>
+        <input type="text" id="contact-no" name="contact-no" placeholder="Enter your contact number" required>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+  <!-- Registered Students Section -->
+  <div id="records-section" class="section hidden">
+    <h2>Registered Students</h2>
+    <table id="studentsTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Student ID</th>
+          <th>Email</th>
+          <th>Contact No.</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamic content will be inserted here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
